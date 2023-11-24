@@ -99,6 +99,7 @@ code = "lookup ccmp_Other_1 {
 } ccmp_Other_1;
 
 lookup ccmp_Other_2 {
+	lookupflag 0;
 	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb hookabovecomb dblgravecomb breveinvertedcomb];
 	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
@@ -106,11 +107,13 @@ lookup ccmp_Other_2 {
 } ccmp_Other_2;
 
 lookup ccmp_Other_3 {
+	lookupflag 0;
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
 } ccmp_Other_3;
 
 lookup ccmp_latn_1 {
+	lookupflag 0;
 	sub fi by f i;
 	sub fl by f l;
 	sub ldot by l periodcentered.loclCAT;
@@ -281,11 +284,11 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1140;
+value = 1206;
 },
 {
 name = winDescent;
-value = 204;
+value = 251;
 },
 {
 name = hheaAscender;
@@ -36519,7 +36522,7 @@ unicode = 7808;
 color = 4;
 glyphname = X;
 kernRight = K;
-lastChange = "2023-11-24 14:34:00 +0000";
+lastChange = "2023-11-24 15:17:05 +0000";
 layers = (
 {
 background = {
@@ -55498,6 +55501,27 @@ width = 260;
 );
 note = itilde;
 unicode = 297;
+},
+{
+color = 9;
+glyphname = ij;
+lastChange = "2023-11-24 15:14:35 +0000";
+layers = (
+{
+layerId = "053302AA-4A2A-42DC-B919-9CC4D126D2B5";
+shapes = (
+{
+ref = i;
+},
+{
+pos = (260,0);
+ref = j;
+}
+);
+width = 520;
+}
+);
+unicode = 307;
 },
 {
 color = 4;
@@ -81490,11 +81514,34 @@ unicode = 92;
 {
 color = 4;
 glyphname = periodcentered.loclCAT;
-lastChange = "2023-05-02 15:44:32 +0000";
+lastChange = "2023-11-24 15:16:36 +0000";
 layers = (
 {
 layerId = "053302AA-4A2A-42DC-B919-9CC4D126D2B5";
-width = 600;
+shapes = (
+{
+pos = (-40,280);
+ref = period;
+}
+);
+width = 220;
+}
+);
+},
+{
+color = 9;
+glyphname = periodcentered.loclCAT.case;
+lastChange = "2023-11-24 15:15:16 +0000";
+layers = (
+{
+layerId = "053302AA-4A2A-42DC-B919-9CC4D126D2B5";
+shapes = (
+{
+pos = (0,314);
+ref = period;
+}
+);
+width = 300;
 }
 );
 },
@@ -81577,18 +81624,6 @@ width = 360;
 );
 note = hyphen;
 unicode = 45;
-},
-{
-color = 4;
-glyphname = softhyphen;
-lastChange = "2023-05-02 15:44:32 +0000";
-layers = (
-{
-layerId = "053302AA-4A2A-42DC-B919-9CC4D126D2B5";
-width = 0;
-}
-);
-unicode = 173;
 },
 {
 color = 4;
@@ -90441,6 +90476,75 @@ width = 450;
 unicode = 126;
 },
 {
+color = 9;
+glyphname = asciicircum;
+lastChange = "2023-11-24 15:14:51 +0000";
+layers = (
+{
+anchors = (
+{
+name = top;
+pos = (218,846);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (622,21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (838,-20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "053302AA-4A2A-42DC-B919-9CC4D126D2B5";
+shapes = (
+{
+closed = 1;
+nodes = (
+(121,616,o),
+(148,651,o),
+(198,702,c),
+(232,661,o),
+(271,626,o),
+(310,626,cs),
+(342,626,o),
+(378,650,o),
+(378,674,cs),
+(378,681,o),
+(376,688,o),
+(369,694,cs),
+(329,731,o),
+(270,805,o),
+(240,835,cs),
+(233,842,o),
+(224,846,o),
+(216,846,cs),
+(208,846,o),
+(200,842,o),
+(193,836,cs),
+(156,802,o),
+(81,722,o),
+(40,689,cs),
+(33,683,o),
+(30,673,o),
+(30,663,cs),
+(30,641,o),
+(44,616,o),
+(71,616,cs)
+);
+}
+);
+width = 408;
+}
+);
+unicode = 94;
+},
+{
 color = 4;
 glyphname = micro;
 lastChange = "2023-11-24 14:31:39 +0000";
@@ -94618,7 +94722,7 @@ note = breve.cap;
 {
 color = 4;
 glyphname = dieresis;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 hints = (
@@ -94659,7 +94763,7 @@ unicode = 168;
 {
 color = 4;
 glyphname = dotaccent;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 hints = (
@@ -94692,7 +94796,7 @@ unicode = 729;
 {
 color = 4;
 glyphname = grave;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 hints = (
@@ -94724,7 +94828,7 @@ unicode = 96;
 {
 color = 4;
 glyphname = acute;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -94781,7 +94885,7 @@ unicode = 180;
 {
 color = 4;
 glyphname = hungarumlaut;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -94872,7 +94976,7 @@ unicode = 733;
 {
 color = 4;
 glyphname = circumflex;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 hints = (
@@ -94949,7 +95053,7 @@ unicode = 713;
 {
 color = 4;
 glyphname = caron;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 hints = (
@@ -94981,7 +95085,7 @@ unicode = 711;
 {
 color = 4;
 glyphname = breve;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -95046,7 +95150,7 @@ unicode = 728;
 {
 color = 4;
 glyphname = ring;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -95131,7 +95235,7 @@ unicode = 730;
 {
 color = 4;
 glyphname = tilde;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -95322,7 +95426,7 @@ unicode = 732;
 {
 color = 4;
 glyphname = macron;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -95376,7 +95480,7 @@ unicode = 175;
 {
 color = 4;
 glyphname = cedilla;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 hints = (
@@ -95411,7 +95515,7 @@ unicode = 184;
 {
 color = 4;
 glyphname = ogonek;
-lastChange = "2023-11-24 14:34:47 +0000";
+lastChange = "2023-11-24 15:15:50 +0000";
 layers = (
 {
 background = {
@@ -96090,6 +96194,7 @@ kerningLTR = {
 "@MMK_R_quoteright" = -80;
 "@MMK_R_t" = -30;
 "@MMK_R_v" = -50;
+periodcentered.loclCAT.case = -180;
 };
 "@MMK_L_R" = {
 "@MMK_R_B" = -10;
