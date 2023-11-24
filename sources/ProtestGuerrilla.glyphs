@@ -1,6 +1,9 @@
 {
-.appVersion = "3223";
+.appVersion = "3227";
 .formatVersion = 3;
+DisplayStrings = (
+"ı̏ȉ"
+);
 classes = (
 {
 automatic = 1;
