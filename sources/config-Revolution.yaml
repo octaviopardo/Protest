@@ -1,0 +1,7 @@
+sources:
+  - ProtestRevolution.glyphs
+familyName: "Protest Revolution"
+outputDir:
+  '../fonts/ProtestRevolution'
+buildOTF: false
+removeOutlineOverlaps: false

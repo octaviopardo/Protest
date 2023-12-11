@@ -1,0 +1,5 @@
+sources:
+  - ProtestRiot.glyphs
+familyName: "Protest Riot"
+outputDir:
+  '../fonts/ProtestRiot'
